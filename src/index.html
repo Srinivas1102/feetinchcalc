@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+        <title>Document</title>
+   <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+   </style>
+</head>
+<body class="bg-gray-200 py-10 px-3 sm:px-0 flex items-center justify-center min-h-screen ">
+  <div class="mx-auto w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 py-5 bg-white rounded shadow text-lg sm:text-base">
+      <h1 class="text-3xl sm:text-2xl mb-5 text-center">Feet & Inches Calculator</h1>
+      <div id="inputsArea">
+          <div class="inputRow flex   mb-3">
+              <input class="feetInput w-1/2 sm:flex-1 mt-2 sm:mt-0 sm:ml-1 py-2 px-1 rounded border border-gray-300" type="number" placeholder="Feet">
+              <input class="inchesInput w-1/2 sm:flex-1 mt-2 sm:mt-0 sm:ml-1 py-2 px-1 rounded border border-gray-300" type="number" placeholder="Inches">
+          </div>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between mb-4">
+          <button id="addInput" class="py-2 px-4 rounded bg-blue-500 text-white mb-2 sm:mb-0">Add input</button>
+          <button id="reset" class="py-2 px-4 rounded bg-red-500 text-white mt-2 sm:mt-0">Reset</button>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-around mb-4">
+          <button id="add" class="py-2 px-4 rounded bg-green-500 text-white mb-2 sm:mb-0">Add</button>
+          <button id="subtract" class="py-2 px-4 rounded bg-yellow-500 text-white mb-2 sm:mb-0">Subtract</button>
+          <button id="multiply" class="py-2 px-4 rounded bg-purple-500 text-white mb-2 sm:mb-0">Multiply</button>
+          <button id="divide" class="py-2 px-4 rounded bg-pink-500 text-white">Divide</button>
+      </div>
+      <div id="result" class="text-center text-3xl sm:text-2xl font-bold">0'0"</div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
